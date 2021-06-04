@@ -148,7 +148,8 @@ REST_FRAMEWORK = {
 }
 
 CORS_ALLOWED_ORIGINS = [
-	"http://localhost:3000"
+	"http://localhost:3000",
+	"https://react-future-diary-blog.netlify.app/"
 ]
 
 # Custom user model
