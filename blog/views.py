@@ -18,10 +18,10 @@ def home(request):
 	<body>
 		<div style='text-align: center'>
 			<h1>Django Blog API</h1>
-			<p><a href=''>Click here</a> to get info about the API endpoints</p>
-			<p>Blog API <a href=''>GitHub Repo</a></p>
-			<p>Go to 'Future Diary' <a href=''>React App</a> (built on this API)</p>
-			<p>React App <a href=''>GitHub Repo</a></p>
+			<p><a href='https://github.com/namanshah01/django-blog-api/tree/master#api-endpoints'>Click here</a> to get info about the API endpoints</p>
+			<p>Blog API <a href='https://github.com/namanshah01/django-blog-api/'>GitHub Repo</a></p>
+			<p>Go to 'Future Diary' <a href='https://react-future-diary-blog.netlify.app/'>React App</a> (built on this API)</p>
+			<p>React App <a href='https://github.com/namanshah01/react-blog'>GitHub Repo</a></p>
 		</div>
 	</body>
 	</html>
