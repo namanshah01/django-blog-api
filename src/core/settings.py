@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 import os
 from datetime import timedelta
 from dotenv import load_dotenv
+import django_heroku
 
 load_dotenv()
 
@@ -31,7 +32,7 @@ SECRET_KEY = os.getenv("DJANGO_SECRET_KEY")
 # DEBUG = True
 DEBUG = (os.environ.get('DEBUG_VALUE') == 'True')
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['djangoblogapi.herokuapp.com', '127.0.0.1']
 # CORS_ORIGIN_ALLOW_ALL = True
 
 # Application definition
@@ -131,6 +132,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
+STTAIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 
 # Permissions:
@@ -166,3 +168,5 @@ SIMPLE_JWT = {
 	'AUTH_TOKEN_CLASSES': ('rest_framework_simplejwt.tokens.AccessToken',),
 	'TOKEN_TYPE_CLAIM': 'token_type',
 }
+
+django_heroku.settings(locals())
