@@ -32,7 +32,7 @@ SECRET_KEY = os.getenv("DJANGO_SECRET_KEY")
 # DEBUG = True
 DEBUG = (os.environ.get('DEBUG_VALUE') == 'True')
 
-ALLOWED_HOSTS = ['djangoblogapi.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ['react-future-diary-blog.netlify.app', 'djangoblogapi.herokuapp.com', '127.0.0.1']
 # CORS_ORIGIN_ALLOW_ALL = True
 
 # Application definition
