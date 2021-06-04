@@ -6,7 +6,7 @@ Blog API built using Django & Django Rest Framework, deployed through Heroku.
 - Auth using JWT
 - CRUD blogs
 
-Also check out the [source code](https://github.com/namanshah01/react-blog) and [website](https://react-future-diary-blog.netlify.app) of the React Application built on this API
+Also check out the [source code](https://github.com/namanshah01/react-blog) and [website](https://reactblog-futurediary.netlify.app) of the React Application built on this API
 
 
 ## API Endpoints
