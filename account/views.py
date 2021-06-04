@@ -7,17 +7,6 @@ from rest_framework_simplejwt.tokens import RefreshToken
 from rest_framework.permissions import AllowAny, IsAuthenticated
 from rest_framework_simplejwt.views import TokenObtainPairView
 from .models import Account
-from django.http import HttpResponse
-
-def home(request):
-	return HttpResponse('''
-	<div style='text-align: center'>
-	<h1>Future Diary - Blog API</h1>
-	<p><a href='https://github.com/namanshah01/django-react-blog/blob/master/server/README.md'>Click here</a> to get info about the API endpoints</p>
-	<p>Go to 'Future Diary' <a href=''>React App</a></p>
-	<p>Link to <a href=''>GitHub Repo</a></p>
-	</div>
-	''')
 
 class MyTokenObtainPairView(TokenObtainPairView):
     serializer_class = MyTokenObtainPairSerializer

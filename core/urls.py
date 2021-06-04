@@ -16,10 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
-from account.views import MyTokenObtainPairView, home
+from account.views import MyTokenObtainPairView
+from blog.views import home, RedirectHome
 
 urlpatterns = [
-	path('', home, name='api-root'),
+	path('', RedirectHome, name='root'),
+	path('api/', home, name='api-root'),
 	path('admin/', admin.site.urls),
 	path('api/blog/', include('blog.urls', namespace='blogs')),
 	path('api/user/', include('account.urls', namespace='users')),
