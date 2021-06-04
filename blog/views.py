@@ -7,13 +7,24 @@ from django.shortcuts import redirect
 
 def home(request):
 	return HttpResponse('''
-	<div style='text-align: center'>
-	<h1>Django Blog API</h1>
-	<p><a href=''>Click here</a> to get info about the API endpoints</p>
-	<p>Blog API <a href=''>GitHub Repo</a></p>
-	<p>Go to 'Future Diary' <a href=''>React App</a> (built on this API)</p>
-	<p>React App <a href=''>GitHub Repo</a></p>
-	</div>
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Blog API</title>
+	</head>
+	<body>
+		<div style='text-align: center'>
+			<h1>Django Blog API</h1>
+			<p><a href=''>Click here</a> to get info about the API endpoints</p>
+			<p>Blog API <a href=''>GitHub Repo</a></p>
+			<p>Go to 'Future Diary' <a href=''>React App</a> (built on this API)</p>
+			<p>React App <a href=''>GitHub Repo</a></p>
+		</div>
+	</body>
+	</html>
 	''')
 
 def RedirectHome(request):
