@@ -53,10 +53,6 @@ Create a superuser for admin privilages
 ```bash
 python3 manage.py createsuperuser
 ```
-Create a superuser for admin privilages
-```bash
-python manage.py createsuperuser
-```
 Now set the variables `DJANGO_SECRET_KEY` and `DEBUG_VALUE` from `core/settings.py` either as environment variables or hard code them into the file itself.
 <br>Start the server
 ```bash
